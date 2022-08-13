@@ -1,0 +1,22 @@
+.Navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+}
+
+.Logo {
+  width: 6%;
+  height: 6%;
+}
+
+@media only screen and (max-width: 600px) {
+  .Navbar {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .Logo {
+    width: 100vw;
+  }
+}
