@@ -23,8 +23,30 @@
   color: #a20530;
   transition: 0.4s;
 }
+
+.ulPhone {
+  display: none;
+}
 @media only screen and (max-width: 600px) {
+  .ListItem {
+    padding: 40px 0;
+  }
+
   .ul {
     display: none;
+  }
+
+  .ulPhone {
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    list-style-type: none;
+    transition: 0.5s;
+    font-size: 2rem;
+  }
+
+  .ulPhone a {
+    color: white;
   }
 }

@@ -1,8 +1,11 @@
 import "./index.css";
 
-function Section() {
+function Section({ value }) {
   return (
-    <div className="Section">
+    <div
+      style={value === "About me and experiences" ? { display: "flex" } : null}
+      className="Section"
+    >
       <h2 className="title" id="Aboutme">
         About me
       </h2>
@@ -47,10 +50,14 @@ function Section() {
       <h5 className="title5">May 2021 - October 2021</h5>
       <p>
         Sales Assistant at the store "CROFF" (OVS s.p.a.) in a street of
-        Palermo. My duties were: Assisting customers during their choice of
-        products to buy; arrangement and replacement of goods, shop and cashier
-        management. During this experience, since I learned fast, I worked in
-        three other locations due to need of staff e.g Upim, improving myself.
+        Palermo.
+        <br />
+        My duties were: Assisting customers during their choice of products to
+        buy; arrangement and replacement of goods, shop and cashier management.
+        <br />
+        During this experience, since I learned fast, I worked in three other
+        locations due to need of staff e.g Upim, improving myself.
+        <br />
         The same agency offered some training courses about our security at
         work, fire prevention (low risk) and the new European legislation on
         privacy.
@@ -59,6 +66,7 @@ function Section() {
       <h5 className="title5">September 2016 - September 2018</h5>
       <p>
         Tour guide in the most interesting tourist attractions of Palermo.
+        <br />
         Particularly in October 2016, I had joined at the Festival "Le Vie dei
         Tesori" as a tour guide assistant, this has allowed me to improve in my
         communication skills and understanding of customers in general, leading

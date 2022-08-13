@@ -1,11 +1,21 @@
+.hi {
+  transition: all 1s;
+  transition-delay: 0.4s;
+  opacity: 0;
+}
+
+.hi.active {
+  opacity: 1;
+}
+
 .main_title {
   margin: 0;
   background: #a20530;
   background: linear-gradient(to right, #a20530 7%, #ff7f4b 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  transition: all 0.8s;
-  transition-delay: 0.4s;
+  transition: all 2s;
+  transition-delay: 1s;
   opacity: 0;
 }
 
@@ -13,21 +23,25 @@
   opacity: 1;
 }
 
-/* .transition {
-  transition: all 0.8s;
-    transition-delay: .4s;
-    opacity: 1;
-} */
+.h2 {
+  transition: all 3s;
+  transition-delay: 2s;
+  opacity: 0;
+}
 
-/* h2 {
-  /* transition: all 1.4s;
-    transition-delay: 1s;
-    opacity: 2; */
-/* transition: all 0.8s;
-    transition-delay: .4s;
-    opacity: 1;
-    transform: scale(0.9);
-} */
+.h2.active {
+  opacity: 1;
+}
+
+.p {
+  transition: all 3s;
+  transition-delay: 3.8s;
+  opacity: 0;
+}
+
+.p.active {
+  opacity: 1;
+}
 
 h2,
 h3 {
@@ -47,6 +61,10 @@ h3 {
   align-self: center;
 }
 
+.Hero p {
+  text-align: center;
+}
+
 .Hero .myphoto {
   align-self: flex-end;
 }
@@ -56,10 +74,14 @@ h3 {
 }
 
 .photo {
-  /* position: fixed;
-  bottom: 0;
-  left: 70%; */
+  transition: all 2s;
+  transition-delay: 2.3s;
+  opacity: 0;
   width: 397px;
+}
+
+.photo.active {
+  opacity: 1;
 }
 
 .box span {
@@ -100,8 +122,16 @@ h3 {
 
 @media only screen and (max-width: 600px) {
   .Hero {
-    padding-top: 250px;
     flex-direction: column;
     height: auto;
+    padding-top: 30px;
+  }
+
+  .textMain {
+    font-size: 18px;
+  }
+
+  .photo {
+    padding-top: 20px;
   }
 }

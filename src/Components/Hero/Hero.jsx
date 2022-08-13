@@ -1,28 +1,28 @@
 import "./index.css";
-import {useEffect, useState} from 'react'
+import { useEffect, useState } from "react";
 import photo from "../../assets/_GGL8170.png";
 
 function Hero() {
-const [isActive, setActive] = useState('');
+  const [isActive, setActive] = useState("");
 
- useEffect(() => {
-  setActive('active');
- }, [])
+  useEffect(() => {
+    setActive("active");
+  }, []);
 
   return (
-    <div className="Hero">
+    <div className="Hero" id="Hero">
       <div className="box">
         <div className="textMain">
           {/* <span></span> */}
-          <h3>Hi, I'm</h3>
+          <h3 className={`hi ${isActive}`}>Hi, I'm</h3>
           <h1 className={`main_title ${isActive}`}>Federica Schillaci</h1>
-          <h2>Front-end web developer,</h2>
+          <h2 className={`h2 ${isActive}`}>Front-end web developer,</h2>
           <span></span>
-          <ul>HTML/CSS/JAVASCRIPT/REACT</ul>
+          <p className={`p ${isActive}`}>HTML/CSS/JAVASCRIPT/REACT</p>
         </div>
       </div>
       <div className="myphoto">
-        <img className="photo" src={photo} alt="photo" />
+        <img className={`photo ${isActive}`} src={photo} alt="" />
       </div>
     </div>
   );
