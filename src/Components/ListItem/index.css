@@ -11,6 +11,7 @@
 .ul a {
   color: white;
   text-decoration: none;
+  transition: 0.5s;
 }
 
 .ul a:hover {
@@ -21,7 +22,7 @@
 
 .ul a:active {
   color: #a20530;
-  transition: 0.4s;
+  transition: 0.2s;
 }
 
 .ulPhone {

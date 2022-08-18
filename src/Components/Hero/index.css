@@ -77,9 +77,9 @@ h3 {
   transition: all 2s;
   transition-delay: 2.3s;
   opacity: 0;
-  /* width: 397px;  */
+  max-width: 397px;
   width: 100%;
-  max-width: 600px;
+  /* max-width: 600px; */
   height: auto;
 }
 
@@ -124,7 +124,7 @@ h3 {
 }
 
 /* tablet */
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 768px) {
   .Hero {
     flex-direction: column;
     height: auto;
@@ -144,30 +144,10 @@ h3 {
   }
 }
 
-@media only screen and (max-width: 820px) {
-  .Hero {
-    flex-direction: column;
-    height: auto;
-    padding-top: 100px;
-  }
-
-  .Hero .myphoto {
-    align-self: center;
-  }
-
-  .textMain {
-    font-size: 27px;
-  }
-
-  .photo {
-    max-width: 450px;
-  }
-}
-
-/* desktop */
 @media only screen and (min-width: 900px) {
-  .textMain {
-    font-size: 23px;
+  .Hero {
+    flex-direction: row;
+    padding-top: 55px;
   }
 
   .photo {
@@ -175,7 +155,8 @@ h3 {
   }
 }
 
-@media only screen and (min-width: 1200px) {
+/* desktop grandi*/
+@media only screen and (min-width: 1367px) {
   .textMain {
     font-size: 27px;
   }
