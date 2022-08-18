@@ -124,7 +124,27 @@ h3 {
 }
 
 /* tablet */
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 768px) {
+  .Hero {
+    flex-direction: column;
+    height: auto;
+    padding-top: 100px;
+  }
+
+  .Hero .myphoto {
+    align-self: center;
+  }
+
+  .textMain {
+    font-size: 27px;
+  }
+
+  .photo {
+    max-width: 450px;
+  }
+}
+
+@media only screen and (max-width: 820px) {
   .Hero {
     flex-direction: column;
     height: auto;
@@ -161,7 +181,7 @@ h3 {
   }
 
   .photo {
-    max-width: 600px;
+    max-width: 560px;
   }
 }
 
@@ -173,7 +193,7 @@ h3 {
     gap: 15px;
   }
 
-  .myphoto {
+  .Hero .myphoto {
     align-self: center;
     padding-top: 35px;
   }
