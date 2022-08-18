@@ -13,7 +13,6 @@ function Hero() {
     <div className="Hero" id="Hero">
       <div className="box">
         <div className="textMain">
-          {/* <span></span> */}
           <h3 className={`hi ${isActive}`}>Hi, I'm</h3>
           <h1 className={`main_title ${isActive}`}>Federica Schillaci</h1>
           <h2 className={`h2 ${isActive}`}>Front-end web developer,</h2>

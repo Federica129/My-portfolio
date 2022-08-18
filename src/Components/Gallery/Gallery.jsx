@@ -13,7 +13,7 @@ function Gallery({ value }) {
       <div className="Gallery__content">
         <ImageGallery
           items={ListPhoto}
-          showFullscreenButton={false}
+          showFullscreenButton={true}
           showPlayButton={false}
           autoPlay={true}
           slideInterval={5000}

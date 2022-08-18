@@ -77,7 +77,10 @@ h3 {
   transition: all 2s;
   transition-delay: 2.3s;
   opacity: 0;
-  width: 397px;
+  /* width: 397px;  */
+  width: 100%;
+  max-width: 600px;
+  height: auto;
 }
 
 .photo.active {
@@ -120,18 +123,66 @@ h3 {
   }
 }
 
-@media only screen and (max-width: 600px) {
+/* tablet */
+@media only screen and (min-width: 768px) {
   .Hero {
     flex-direction: column;
     height: auto;
-    padding-top: 30px;
+    padding-top: 100px;
   }
 
+  .Hero .myphoto {
+    align-self: center;
+  }
+
+  .textMain {
+    font-size: 27px;
+  }
+
+  .photo {
+    max-width: 450px;
+  }
+}
+
+/* desktop */
+@media only screen and (min-width: 900px) {
+  .textMain {
+    font-size: 23px;
+  }
+
+  .photo {
+    max-width: 397px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .textMain {
+    font-size: 27px;
+  }
+
+  .photo {
+    max-width: 600px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .Hero {
+    padding: 0;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .myphoto {
+    align-self: center;
+    padding-top: 35px;
+  }
   .textMain {
     font-size: 18px;
   }
 
   .photo {
-    padding-top: 20px;
+    text-align: center;
+    width: 300px;
   }
 }
