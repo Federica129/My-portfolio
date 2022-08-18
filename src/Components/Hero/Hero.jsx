@@ -1,6 +1,6 @@
 import "./index.css";
 import { useEffect, useState } from "react";
-import photo from "../../assets/_GGL8170.png";
+import photo from "../../assets/avatar.png";
 
 function Hero() {
   const [isActive, setActive] = useState("");
