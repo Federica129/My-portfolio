@@ -29,12 +29,12 @@
   margin: 10px;
 }
 
-.main-footer i {
+.main-footer a {
   color: #ede6db;
   transition: 0.5s;
 }
 
-.main-footer i:hover {
+.main-footer a:hover {
   padding: 0;
   color: #ff7f4b;
   transition: 0.5s;

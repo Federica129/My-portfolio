@@ -8,19 +8,20 @@
   align-items: center;
 }
 
-.ul a {
+.ul p {
+  margin: 0;
   color: white;
   text-decoration: none;
   transition: 0.5s;
 }
 
-.ul a:hover {
+.ul p:hover {
   color: #ff7f4b;
   transition: 0.7s;
   cursor: pointer;
 }
 
-.ul a:active {
+.ul p:active {
   color: #a20530;
   transition: 0.2s;
 }
@@ -47,7 +48,7 @@
     font-size: 2rem;
   }
 
-  .ulPhone a {
+  .ulPhone li {
     color: white;
   }
 }

@@ -2,7 +2,7 @@ import "./index.css";
 import { useEffect, useState } from "react";
 import photo from "../../assets/avatar.png";
 
-function Hero() {
+function Hero({ myRef }) {
   const [isActive, setActive] = useState("");
 
   useEffect(() => {
@@ -10,7 +10,7 @@ function Hero() {
   }, []);
 
   return (
-    <div className="Hero" id="Hero">
+    <div className="Hero" id="Hero" ref={myRef.refHero}>
       <div className="box">
         <div className="textMain">
           <h3 className={`hi ${isActive}`}>Hi, I'm</h3>

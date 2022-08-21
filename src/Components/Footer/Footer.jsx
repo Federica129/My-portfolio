@@ -1,3 +1,5 @@
+import { FaGithub } from "react-icons/fa";
+import { BsInstagram, BsLinkedin } from "react-icons/bs";
 import "./index.css";
 
 function Footer() {
@@ -8,17 +10,17 @@ function Footer() {
         <ul>
           <li>
             <a href="https://github.com/Federica129">
-              <i className="fa-brands fa-github"></i>
+              <FaGithub />
             </a>
           </li>
           <li>
             <a href="https://www.instagram.com/federica.schilli/">
-              <i className="fa-brands fa-instagram"></i>
+              <BsInstagram />
             </a>
           </li>
           <li>
             <a href="https://www.linkedin.com/in/federica-schillaci-b61199234/">
-              <i className="fa-brands fa-linkedin"></i>
+              <BsLinkedin />
             </a>
           </li>
         </ul>
