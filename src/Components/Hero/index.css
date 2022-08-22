@@ -1,10 +1,14 @@
 .hi {
-  transition: all 1s;
-  transition-delay: 0.4s;
   opacity: 0;
 }
 
 .hi.active {
+  transition: all 1s;
+  transition-delay: 0.4s;
+  opacity: 1;
+}
+
+.hi.notActive {
   opacity: 1;
 }
 
@@ -14,32 +18,45 @@
   background: linear-gradient(to right, #a20530 7%, #ff7f4b 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  transition: all 2s;
-  transition-delay: 1s;
+
   opacity: 0;
 }
 
 .main_title.active {
+  transition: all 2s;
+  transition-delay: 1s;
+  opacity: 1;
+}
+
+.main_title.notActive {
   opacity: 1;
 }
 
 .h2 {
-  transition: all 3s;
-  transition-delay: 2s;
   opacity: 0;
 }
 
 .h2.active {
+  transition: all 3s;
+  transition-delay: 2s;
+  opacity: 1;
+}
+
+.h2.notActive {
   opacity: 1;
 }
 
 .p {
-  transition: all 3s;
-  transition-delay: 3.8s;
   opacity: 0;
 }
 
 .p.active {
+  transition: all 3s;
+  transition-delay: 3.8s;
+  opacity: 1;
+}
+
+.p.notActive {
   opacity: 1;
 }
 
@@ -73,16 +90,19 @@ h3 {
 }
 
 .photo {
-  transition: all 2s;
-  transition-delay: 2.3s;
   opacity: 0;
-  max-width: 397px;
-  width: 100%;
-  /* max-width: 600px; */
+  /* max-width: 397px; */
+  /* width: 96%; */
   height: auto;
 }
 
 .photo.active {
+  transition: 2s;
+  transition-delay: 2.3s;
+  opacity: 1;
+}
+
+.photo.notActive {
   opacity: 1;
 }
 
@@ -121,32 +141,10 @@ h3 {
     transform-origin: right;
   }
 }
-@media only screen and (max-width: 600px) {
-  .Hero {
-    padding: 0;
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
-  }
-
-  .Hero .myphoto {
-    align-self: center;
-    padding-top: 35px;
-  }
-  .textMain {
-    font-size: 18px;
-  }
-
-  .photo {
-    text-align: center;
-    width: 300px;
-  }
-}
-/* tablet */
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 768px) {
   .Hero {
     flex-direction: column;
-    height: auto;
+    /* height: auto; */
     padding-top: 100px;
   }
 
@@ -159,7 +157,50 @@ h3 {
   }
 
   .photo {
-    max-width: 450px;
+    width: 100px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .Hero {
+    padding: 0;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .Hero .myphoto {
+    align-self: center;
+    padding-top: 35px;
+    text-align: center;
+  }
+  .textMain {
+    font-size: 18px;
+  }
+
+  .photo {
+    width: 300px;
+  }
+}
+
+/* tablet */
+@media only screen and (min-width: 768px) {
+  .Hero {
+    flex-direction: column;
+    height: auto;
+    padding-top: 100px;
+  }
+
+  .Hero .myphoto {
+    align-self: center;
+    width: 25rem;
+  }
+
+  .textMain {
+    font-size: 27px;
+  }
+
+  .photo {
+    width: 100%;
   }
 }
 
@@ -168,19 +209,18 @@ h3 {
     padding-top: 0px;
     flex-direction: row;
   }
-
-  .photo {
-    max-width: 397px;
-  }
 }
 
 /* desktop grandi*/
 @media only screen and (min-width: 1367px) {
-  .textMain {
-    font-size: 27px;
+  .Hero {
+    height: 100vh;
   }
 
   .photo {
-    max-width: 560px;
+    width: 120%;
+  }
+  .textMain {
+    font-size: 27px;
   }
 }

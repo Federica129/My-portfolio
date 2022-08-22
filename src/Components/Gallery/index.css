@@ -44,6 +44,7 @@
 .Gallery__linkProject {
   display: flex;
   justify-content: center;
+  padding-bottom: 25px;
 }
 
 .ulLink {
@@ -81,13 +82,23 @@
     padding: 0;
   }
   .image-gallery {
-    width: 100vw;
+    width: 95vw;
   }
   .ulLink {
     gap: 30px;
   }
 }
-
+@media only screen and (max-width: 768px) {
+  .Gallery {
+    padding: 0;
+  }
+  .image-gallery {
+    width: 95vw;
+  }
+  .ulLink {
+    gap: 30px;
+  }
+}
 @media only screen and (max-width: 600px) {
   .Gallery {
     padding: 25px 15px;

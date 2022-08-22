@@ -10,10 +10,12 @@
   z-index: 10;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 768px) {
   .Logo {
-    width: 8%;
-    height: 8%;
+    align-items: center;
+  }
+  .Navbar {
+    width: 98.5vw;
   }
 
   .ListItem {

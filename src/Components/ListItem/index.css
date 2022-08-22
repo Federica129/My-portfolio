@@ -4,7 +4,6 @@
   flex-direction: row;
   gap: 10px;
   list-style-type: none;
-  transition: 0.5s;
   align-items: center;
 }
 
