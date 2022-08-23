@@ -3,6 +3,7 @@ import bank from "../assets/website/Immagine 2022-08-13 135627.jpg";
 import websiteGreen from "../assets/website/Immagine 2022-08-13 135758.jpg";
 import universe from "../assets/website/universe.jpg";
 import socialfake from "../assets/website/socialfake.jpg";
+import oldPortfolio from "../assets/website/oldportfolio.jpg";
 
 const ListPhoto = [
   {
@@ -24,6 +25,10 @@ const ListPhoto = [
   {
     thumbnail: bank,
     original: bank,
+  },
+  {
+    thumbnail: oldPortfolio,
+    original: oldPortfolio,
   },
 ];
 

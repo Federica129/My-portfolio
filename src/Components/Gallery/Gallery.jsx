@@ -23,6 +23,12 @@ function Gallery({ myRef, value }) {
       link: "https://github.com/Federica129/EG4/tree/main/faccialibro",
       languages: "HTML/CSS/JS/REACT",
     },
+    {
+      id: 4,
+      description: "Old Portfolio",
+      link: "https://federica129.github.io/myportfolio/",
+      languages: "HTML/CSS",
+    },
   ];
 
   const listRender = listLinkProject.map((obj) => (
