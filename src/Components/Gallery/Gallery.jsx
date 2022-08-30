@@ -29,6 +29,12 @@ function Gallery({ myRef, value }) {
       link: "https://federica129.github.io/myportfolio/",
       languages: "HTML/CSS",
     },
+    {
+      id: 5,
+      description: "To-do-list",
+      link: "https://github.com/Federica129/EG4/tree/main/todolist",
+      languages: "HTML/CSS/JS/REACT",
+    },
   ];
 
   const listRender = listLinkProject.map((obj) => (

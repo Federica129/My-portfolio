@@ -157,7 +157,8 @@ h3 {
   }
 
   .photo {
-    width: 100px;
+    max-width: 397px;
+    width: 96%;
   }
 }
 @media only screen and (max-width: 600px) {

@@ -4,6 +4,7 @@ import websiteGreen from "../assets/website/Immagine 2022-08-13 135758.jpg";
 import universe from "../assets/website/universe.jpg";
 import socialfake from "../assets/website/socialfake.jpg";
 import oldPortfolio from "../assets/website/oldportfolio.jpg";
+import todolist from "../assets/website/todolist.jpg";
 
 const ListPhoto = [
   {
@@ -29,6 +30,10 @@ const ListPhoto = [
   {
     thumbnail: oldPortfolio,
     original: oldPortfolio,
+  },
+  {
+    thumbnail: todolist,
+    original: todolist,
   },
 ];
 
